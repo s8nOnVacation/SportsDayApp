@@ -1,0 +1,31 @@
+.FilterPillsWrapper,
+.FilterPills {
+  display: flex;
+  align-items: center;
+}
+
+.FilterPillsWrapper {
+  padding: 8px;
+  margin: 8px 0;
+  width: 100%;
+  gap: 8px;
+}
+
+.FilterPills {
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.selectedFilter {
+  background-color: #f02e65;
+  color: #e2e8f0;
+}
+
+.unselectedFilter {
+  color: #f02e65;
+}
+
+.unselectedFilter:hover {
+  background-color: #f02e65;
+  color: #e2e8f0;
+}

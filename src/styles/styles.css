@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  letter-spacing: 0.5px;
+}
+
+body {
+  background: #7f98eb;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+}
+
+.AllEventsSection,
+.SelectedEventsSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  border: 1px solid black;
+  width: 50%;
+  height: calc(100vh - 16px);
+  background: #c9d6ff;
+  background: -webkit-linear-gradient(to top, #f4e0f7, #c9d6ff);
+  background: linear-gradient(to top, #f4e0f7, #c9d6ff);
+}
+
+.AllEventsSection {
+  margin-right: 16px;
+}

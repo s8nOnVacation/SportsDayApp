@@ -1,0 +1,25 @@
+.ActionBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.ActionBtn:disabled {
+  cursor: default;
+  background-color: #bebebe;
+  color: rgb(61, 61, 61);
+  border: 1px solid gray;
+}
+
+.Btn_select {
+  background-color: rgb(176, 243, 176);
+  border: 1px solid green;
+}
+
+.Btn_remove {
+  background-color: rgb(255, 179, 179);
+  border: 1px solid red;
+}

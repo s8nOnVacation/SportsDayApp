@@ -1,0 +1,109 @@
+.unselected_Section,
+.selected_Section {
+  display: flex;
+  width: 100%;
+  overflow: scroll;
+}
+
+.unselected_Section {
+  margin-bottom: 8px;
+}
+
+.selected_Section {
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  height: 100%;
+}
+
+.EventCardWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: left;
+  width: 100%;
+}
+
+.selected_Section > .EventCardWrapper {
+  overflow: scroll;
+}
+
+.submitBtnWrapper {
+  height: auto;
+  justify-content: center;
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 16px;
+  width: 100%;
+}
+
+.submitBtnWrapper > .submitBtn {
+  width: 50%;
+  height: 40px;
+  color: #e2e8f0;
+  letter-spacing: 1px;
+  font-size: 16px;
+  background-color: rgb(20, 134, 138);
+}
+
+.selectRemoveBtn {
+  width: 100%;
+  margin-top: 8px;
+}
+
+.EventCard {
+  border: 1px solid black;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 0;
+  width: calc((100% / 2) - 12px);
+  height: 160px;
+  margin-left: 8px;
+  margin-bottom: 8px;
+}
+
+.eventSelectable {
+  background-color: rgb(242, 255, 194);
+}
+
+.eventUnselectable {
+  background: #ffadad; /* fallback for old browsers */
+}
+
+.EventCategory {
+  font-size: 48px;
+  padding: 0 12px;
+  border-right: 2px solid black;
+  height: 100%;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.EventDetails {
+  padding: 0 12px 0 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  height: 100%;
+  width: 70%;
+  gap: 8px;
+}
+
+.EventDetails > span {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media only screen and (max-width: 768px) {
+  .EventCard {
+    width: calc(100% - 16px);
+  }
+}
